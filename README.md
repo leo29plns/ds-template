@@ -1,54 +1,95 @@
-# React + TypeScript + Vite
+# Design System Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal, educational template for building a Design System using React, TypeScript, and Vite. This template is specifically designed for students learning about component libraries and design systems.
 
-Currently, two official plugins are available:
+## 🎯 Purpose
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This template provides a foundation for:
 
-## Expanding the ESLint configuration
+- Learning how to build a component library
+- Understanding Design System principles
+- Practicing component development with React and TypeScript
+- Exploring documentation with Storybook
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Getting Started
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Clone this repository:
+
+```bash
+git clone [repository-url]
+cd ds-template
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+Start Storybook to view components:
+
+```bash
+npm run storybook
+```
+
+Build the library:
+
+```bash
+npm run build
+```
+
+## 📦 Project Structure
+
+```txt
+ds-template/
+├── src/
+│   ├── components/     # React components
+│   │   └── divider/   # Example component
+│   └── index.ts       # Main export file
+├── .storybook/        # Storybook configuration
+└── vite.config.ts     # Build configuration
+```
+
+## 🛠️ Technology Stack
+
+- **React** - UI library
+- **TypeScript** - Type safety and better developer experience
+- **Vite** - Build tool
+- **Storybook** - Component documentation and development
+- **ESLint** - Code linting
+- **CSS Modules** - Scoped styling
+
+## 📚 Available Scripts
+
+- `npm run dev` - Builds the library in watch mode
+- `npm run build` - Builds the library for production
+- `npm run storybook` - Starts Storybook development server
+- `npm run build-storybook` - Builds Storybook for production
+- `npm run lint` - Runs ESLint
+
+## 🎨 Creating Components
+
+1. Create a new directory under `src/components`
+2. Add your component files (`.tsx`, `.module.css`)
+3. Create a story file (`.stories.tsx`)
+4. Export the component in `src/index.ts`
+
+Example component structure:
+
+```txt
+component-name/
+├── component-name.tsx
+├── component-name.module.css
+├── component-name.stories.tsx
+└── index.ts
+```
+
+## 📖 Learning Resources
+
+- [React Documentation](https://react.dev/)
+- [Storybook Tutorials](https://storybook.js.org/tutorials/)
+- [Design Systems Handbook](https://www.designbetter.co/design-systems-handbook)
+
+## 🤝 Contributing
+
+This template is meant for educational purposes. Feel free to fork it and adapt it to your needs!
