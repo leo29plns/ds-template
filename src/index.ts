@@ -1,1 +1,1 @@
-export * from './components/divider';
+export * from './components';
