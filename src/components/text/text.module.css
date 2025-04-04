@@ -2,10 +2,10 @@
   font-size: 1rem;
 }
 
-.ds-text.l {
+.ds-text--l {
   font-size: 1.5rem;
 }
 
-.ds-text.xl {
+.ds-text--xl {
   font-size: 2rem;
 }

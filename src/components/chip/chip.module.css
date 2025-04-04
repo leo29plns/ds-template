@@ -6,12 +6,12 @@
   color: var(--ds-color-text-brand-on-brand);
 }
 
-.ds-chip.success {
+.ds-chip--success {
   background-color: var(--ds-color-background-positive-default);
   color: var(--ds-color-text-positive-on-positive);
 }
 
-.ds-chip.danger {
+.ds-chip--danger {
   background-color: var(--ds-color-background-danger-default);
   color: var(--ds-color-text-danger-on-danger);
 }

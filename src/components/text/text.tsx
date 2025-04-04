@@ -14,7 +14,7 @@ export const Text = ({
   className,
   ...props
 }: TextProps) => {
-  const styles = clsx(classes['ds-text'], classes[size], className);
+  const styles = clsx(classes['ds-text'], classes[`ds-text--${size}`], className);
 
   return (
     <p className={styles} {...props}>
