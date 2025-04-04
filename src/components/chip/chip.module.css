@@ -1,0 +1,17 @@
+.ds-chip {
+  border-radius: .5rem;
+  padding: .5rem;
+  width: fit-content;
+  background-color: var(--ds-color-background-brand-default);
+  color: var(--ds-color-text-brand-on-brand);
+}
+
+.ds-chip.success {
+  background-color: var(--ds-color-background-positive-default);
+  color: var(--ds-color-text-positive-on-positive);
+}
+
+.ds-chip.danger {
+  background-color: var(--ds-color-background-danger-default);
+  color: var(--ds-color-text-danger-on-danger);
+}

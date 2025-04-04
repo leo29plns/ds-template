@@ -1,0 +1,24 @@
+.ds-button {
+  border-radius: .5rem;
+  padding: .75rem;
+  display: flex;
+  gap: .5rem;
+  background-color: var(--ds-color-background-brand-default);
+  color: var(--ds-color-text-brand-on-brand);
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--ds-color-background-brand-hover);
+  }
+}
+
+.ds-button.outlined {
+  background-color: var(--ds-color-background-default);
+  color: var(--ds-color-text-brand-default);
+  border-color: var(--ds-border-brand-default);
+
+  &:hover {
+    background-color: var(--ds-color-background-default-hover);
+  }
+}

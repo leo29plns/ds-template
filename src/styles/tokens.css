@@ -1,0 +1,18 @@
+:root {
+  --ds-color-background-brand-default: hsla(0, 0%, 17%, 1);
+  --ds-color-background-brand-hover: hsla(0, 0%, 12%, 1);
+
+  --ds-color-background-default: hsla(0, 0%, 100%, 1);
+  --ds-color-background-default-hover: hsla(0, 0%, 96%, 1);
+
+  --ds-color-background-positive-default: hsla(148, 79%, 38%, 1);
+  --ds-color-background-danger-default: hsla(1, 84%, 52%, 1);
+
+  --ds-color-text-brand-default: hsla(0, 0%, 17%, 1);
+  --ds-color-text-brand-on-brand: hsla(0, 0%, 96%, 1);
+
+  --ds-color-text-positive-on-positive: hsla(129, 100%, 96%, 1);
+  --ds-color-text-danger-on-danger: hsla(4, 92%, 95%, 1);
+
+  --ds-border-brand-default: hsla(0, 0%, 17%, 1);
+}
