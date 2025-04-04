@@ -2,14 +2,15 @@ import type { ComponentPropsWithoutRef } from 'react';
 import clsx from 'clsx';
 import classes from './chip.module.css';
 
-export interface ChipProps extends ComponentPropsWithoutRef<'div'> {
+export interface ChipProps extends ComponentPropsWithoutRef<'span'> {
+  label: string
   content: string;
   variant?: 'default' | 'success' | 'danger';
   className?: string;
 }
 
 export const Chip = ({
-  content,
+  label,
   variant = 'default',
   className,
   ...props
@@ -17,8 +18,8 @@ export const Chip = ({
   const styles = clsx(classes['ds-chip'], classes[variant], className);
 
   return (
-    <div className={styles} {...props}>
-      {content}
-    </div>
+    <span className={styles} {...props}>
+      {label}
+    </span>
   );
 };
